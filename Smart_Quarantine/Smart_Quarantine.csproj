@@ -1,0 +1,265 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E80FF1D2-C37D-43E5-BB5D-9858362AC54D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Smart_Quarantine</RootNamespace>
+    <AssemblyName>Smart_Quarantine</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>143205557-stay-at-home-quarantine-in-your-home-flying-viruses-coronavirus-pandemic-and-social-distance-self-is.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ContactForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContactForm.Designer.cs">
+      <DependentUpon>ContactForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinishOrderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishOrderForm.Designer.cs">
+      <DependentUpon>FinishOrderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food.cs" />
+    <Compile Include="foodcontroll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="foodcontroll.Designer.cs">
+      <DependentUpon>foodcontroll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FoodPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FoodPanel.Designer.cs">
+      <DependentUpon>FoodPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order.cs" />
+    <Compile Include="OrderControll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderControll.Designer.cs">
+      <DependentUpon>OrderControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderPanel.Designer.cs">
+      <DependentUpon>OrderPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OrderViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderViewForm.Designer.cs">
+      <DependentUpon>OrderViewForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plan.cs" />
+    <Compile Include="PlanControll.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlanControll.Designer.cs">
+      <DependentUpon>PlanControll.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanList.cs" />
+    <Compile Include="PlanPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PlanPanel.Designer.cs">
+      <DependentUpon>PlanPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RouteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RouteForm.Designer.cs">
+      <DependentUpon>RouteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="smarthome.cs" />
+    <Compile Include="thermo.cs" />
+    <EmbeddedResource Include="ContactForm.resx">
+      <DependentUpon>ContactForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinishOrderForm.resx">
+      <DependentUpon>FinishOrderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="foodcontroll.resx">
+      <DependentUpon>foodcontroll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FoodPanel.resx">
+      <DependentUpon>FoodPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderControll.resx">
+      <DependentUpon>OrderControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderPanel.resx">
+      <DependentUpon>OrderPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderViewForm.resx">
+      <DependentUpon>OrderViewForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanControll.resx">
+      <DependentUpon>PlanControll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanPanel.resx">
+      <DependentUpon>PlanPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RouteForm.resx">
+      <DependentUpon>RouteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\control_room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controll_room_f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\controll_room_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pizza.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\souvlaki.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\burger.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smartphone_f.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smartphone_r.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\efood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orderfinish.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\living_room_dark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\living_room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\orderfinish1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="143205557-stay-at-home-quarantine-in-your-home-flying-viruses-coronavirus-pandemic-and-social-distance-self-is.ico" />
+    <None Include="Resources\frape.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
